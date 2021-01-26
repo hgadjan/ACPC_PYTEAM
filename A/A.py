@@ -1,5 +1,5 @@
 filepath = 'digits.in'
-
+ans = ""
 l = {'0': 'O',
      '1': 'I',
      '2':'Z',
@@ -10,20 +10,20 @@ l = {'0': 'O',
      '9': 'G'
      }
 
-ans = ""
+
 
 with open(filepath) as fp:
-    line1 = fp.readline()
+    n = int(fp.readline().strip())
     line = fp.readline()
     cnt = 1
-    while line and cnt <= int(line1.strip()):
 
-        numb = str(line.strip())
-        numb = numb[::-1]
+    while line and cnt <= n:
+        numb = line[::-1]
         if numb:
             for i in numb:
                 ans += l[i]
             ans +="\n"
+
         cnt += 1
         line = fp.readline()
 
