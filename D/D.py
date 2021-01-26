@@ -3,10 +3,10 @@ ans = ''
 number_list = []
 
 with open(filepath) as fp:
-    line1 = fp.readline()
+    n = fp.readline()
     line = fp.readline()
 
-    for i in range(int(line1)):
+    for i in range(int(n)):
         number_list.append(line[i])
  
 number_list.sort()

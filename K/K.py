@@ -11,8 +11,10 @@ out = ""
 
 for item in ans:
     out += str(item)+' '
+
 out+= '\n'
 sortedItem = sorted(s)
+
 for element in sortedItem:
     out += element
 
